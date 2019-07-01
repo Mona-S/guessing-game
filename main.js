@@ -9,13 +9,22 @@ function initializeApp () {
     
     the_number = pick_number();
     $("#submit").click(make_guess);
-
+    $("#startAgain").click(reset_game);
     
     
     
    
 //this is where you need to place the function call for your random number generator function.
 //You will also place your clickhandler in here
+}
+function reset_game(){
+    //set text in response to nothing
+    the_number = pick_number();
+    //pick a new random number
+    $("#submit").click(make_guess);
+    $("#startAgain").click(reset_game);
+    //notify the player that a new game is happening
+    $("#response_div").text("");
 }
 
 
@@ -32,22 +41,15 @@ function make_guess(){
         }
         else {
             $("#response_div").text("You Guessed It Right!!");
-            
+            $("#startAgain").show();
           
 
         }   
         
     }  
-    var button2 = $('<button>',{
-        text: "Nice Try ! Let's play Again",
-        click: tryagain
-    });
-    $('#container1').append(button2); 
+    
     
 }
 
 
-function tryagain(){
-    location.reload(true);
-}
 
