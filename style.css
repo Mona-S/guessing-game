@@ -1,0 +1,54 @@
+body {
+    background-color: lavenderblush;
+}
+
+body {
+    background-image: url("/Users/mona/lfz/guess/good-luck-charms.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+
+    margin : 10px;
+    text-align: center;
+    font-size: 40px;
+    padding : 80px;
+    align-content: center;
+    height: 150px;
+
+}
+
+#container :nth-child(1){
+    padding: 5px;
+    
+}
+
+
+#container :nth-child(5){
+    font-size: 20px;
+    background-color: lightsalmon;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+#container :nth-child(3){
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+
+#container1 {
+    text-align: center;
+    font-size: 50px;
+    align-content: center;
+
+}
+
+#container1 :nth-child(1){
+    font-size: 20px;
+    background-color: rgb(27, 177, 27);
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
