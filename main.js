@@ -8,7 +8,11 @@ function pick_number(){
 function initializeApp () {
     
     the_number = pick_number();
-    $("button").click(make_guess);
+    $("#submit").click(make_guess);
+
+    
+    
+    
    
 //this is where you need to place the function call for your random number generator function.
 //You will also place your clickhandler in here
@@ -31,6 +35,19 @@ function make_guess(){
             
           
 
-        }    
+        }   
+        
     }  
+    var button2 = $('<button>',{
+        text: "Nice Try ! Let's play Again",
+        click: tryagain
+    });
+    $('#container1').append(button2); 
+    
 }
+
+
+function tryagain(){
+    location.reload(true);
+}
+
