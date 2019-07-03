@@ -1,16 +1,15 @@
 $(document).ready(initializeApp); // This line is defining a function that will run once the HTML document loads.
 
 var the_number = null;
+
 function pick_number(){
     var random_number = Math.floor(Math.random()*11);
     return random_number;
 }
 function initializeApp () {
-    
     the_number = pick_number();
     $("#submit").click(make_guess);
     $("#startAgain").click(reset_game);
-    
     
     
    
@@ -41,13 +40,10 @@ function make_guess(){
         }
         else {
             $("#response_div").text("You Guessed It Right!!");
-            $("#startAgain").show();
-          
-
         }   
         
     }  
-    
+    $("#startAgain").show();
     
 }
 
