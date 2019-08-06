@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script> <!-- note that jQuery must be imported to use jQuery in your project.-->
-    <script src="main.js"></script>  <!--this is linking your js file to you HTML, note it is loaded after jQuery so that jQuery is available to your js file-->
-    
+    <script src="main.js"></script> 
+     <!--this is linking your js file to you HTML, note it is loaded after jQuery so that jQuery is available to your js file-->
+    <script src="server.js"></script>
     <link rel="stylesheet" href="style.css">
 
     <title>The Guessing Game</title>
 </head>
 <body>
+    <div id = "highScore">High Score</div>
     <div id="container">
         <div>Are you Game ?</div>
         <div>Guess a Number !!</div>
+        
         <input id="guess_input" type="number">
         <div id="response_div"></div> 
         <button id="submit">Try your Luck</button>
         
+        
     <div id="container1">
+        
         <button id="startAgain">"Nice Try ! Let's play Again"</button>    
     </div>
     </div>
